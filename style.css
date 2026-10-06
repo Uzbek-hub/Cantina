@@ -1,0 +1,106 @@
+/* Cantina do Campus: versão corrigida */
+
+* {
+  box-sizing: border-box; /* padding e borda passam a contar dentro da largura */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+/* ---------- Topo ---------- */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #14213d;
+  color: #ffffff;
+  padding: 16px 24px;
+}
+
+.marca {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:focus-visible {
+  outline: 2px solid #fca311;
+  outline-offset: 4px;
+}
+
+/* ---------- Conteúdo ---------- */
+.conteudo {
+  padding: 24px;
+}
+
+h1 {
+  color: #14213d;
+  margin-top: 0;
+}
+
+.subtitulo {
+  color: #4b5563; /* razão ~7,6:1 contra o branco */
+}
+
+/* ---------- Cartões ---------- */
+.cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cartao {
+  flex: 1 1 280px;
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.cartao h3 {
+  margin: 0 0 6px;
+}
+
+#cardapio .preco {
+  font-weight: bold;
+  color: #14213d;
+}
+
+/* mesma especificidade de "#cardapio .preco", mas vem depois e vence */
+#cardapio .promocao {
+  color: #b91c1c;
+}
+
+/* ---------- Botão e rodapé ---------- */
+.botao {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #fca311;
+  color: #14213d;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.rodape {
+  background: #14213d;
+  color: #c7cee0;
+  padding: 16px 24px;
+  text-align: center;
+}
